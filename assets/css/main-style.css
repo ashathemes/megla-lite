@@ -1,0 +1,119 @@
+article.post {
+	border: 0px solid #ddd;
+}
+article.post .cover {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+article.post .item {
+	padding: 60px 30px;
+	border: 1px solid #fff;
+	position: relative;
+	background-size: cover;
+	background-position: 50% 0% !important;
+}
+article.post .item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(12, 12, 12, 0.7);
+}
+article.post .item::after {
+	right: -1px;
+}
+article.post .item::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 1;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+	opacity: 0;
+}
+article.post .cover:hover .cover-inner {
+	-webkit-clip-path: inset(15px 15px 15px 15px);
+	clip-path: inset(15px 15px 15px 15px);
+}
+article.post .cover-inner {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	background-color: #f9f9f9;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);
+	-webkit-transition: all 1.25s cubic-bezier(.01, .71, .26, .94);
+	-moz-transition: all 1.25s cubic-bezier(.01, .71, .26, .94);
+	transition: all 1.25s cubic-bezier(.01, .71, .26, .94);
+}
+.bg-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+article.post .item .content {
+	position: relative;
+	z-index: 7;
+}
+article.post .item .info {
+	margin-bottom: 15px;
+}
+article.post .item h5.entry-title a, 
+article.post .item p, 
+article.post .item a.underline-text, 
+article.post .item .entry-meta a,
+article.post .item .entry-meta i {
+	color: #fff;
+}
+.blog .item h5 {
+	font-size: 35px;
+	line-height: 1.5em;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+article.post .item p {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+a.underline-text {
+	color: #777;
+	font-size: 16px;
+	border-bottom: 1px solid #f96f00;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+	font-weight: 400;
+	text-decoration: inherit;
+}
+a.underline-text:hover {
+	border-bottom: 1px solid transparent;
+}
+.single article.post {
+	border: 1px solid #ddd;
+}
+.single article.post .post-content {
+	padding: 30px;
+}
+.entry-footer span, 
+.entry-meta span {
+	margin-right: 14px;
+}
+.slicknav_btn {
+	left: 42%;
+	float: left;
+	top: 0px;
+}
